@@ -1,0 +1,180 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\usepackage{lmodern, amsmath, xcolor, rotating, multirow, adjustbox}
+\usepackage[numbers,elide,sort&compress]{natbib}
+\usepackage[bottom=1.65cm, top=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[colorlinks=true, citecolor=blue, urlcolor=blue, linkcolor=blue, breaklinks=true,pdfpagelabels=false ]{hyperref}
+\usepackage[normalem]{ulem}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sfmath, sansmathaccent}
+
+
+% tikz
+\usepackage{tikz}
+
+
+\makeatletter
+
+\renewcommand{\thesection}{\arabic{section}.\hspace*{-.4cm}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}\hspace*{-.2cm}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt plus 5pt minus 3pt}
+%\setlength{\headsep}{0mm}
+\setlength{\footskip}{1cm}
+\setlength{\headheight}{4.5mm}
+
+\renewcommand{\section}{\@startsection{section}{1}{\z@}{10pt}{1pt}{\Large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}{7pt}{1pt}{\large\bfseries}}
+\renewcommand{\@oddhead}{%
+\small\hfill%
+	\begin{tabular}{@{}r@{}}
+	\\[-2.5mm]
+	F.R.S.-FNRS GRANTS AND FELLOWSHIPS CALL 20xx\\[-.75mm]
+	`Postdoctoral Researcher' (CR - Chargé de recherches)
+	\end{tabular}%
+}
+\newcommand{\instructions}[1]{{\small\it\fontsize{11.5pt}{.20\baselineskip}\selectfont\parbox{\textwidth}{#1}}\nopagebreak\par}
+
+\newenvironment{myitemize}{\list{--}{\topsep 0pt \parsep 0pt \itemsep 0pt\itemindent 0\labelwidth \leftmargin 1\labelwidth}}{\endlist}
+\newenvironment{mybigitemize}{\par\list{}{\topsep 0pt\itemsep 0pt\parsep 0pt\leftmargin 0pt \itemindent 0\labelwidth}}{\endlist}
+
+\newcommand{\rien}[1]{}
+
+
+\makeatother
+\begin{document}
+\large
+\fontsize{13.3pt}{.77\baselineskip}\selectfont
+%------------------
+{\centering\begin{small}
+\fontsize{10.7pt}{.85\baselineskip}\selectfont%
+{\renewcommand{\arraystretch}{1.2}
+\vspace*{-3.5mm}
+\begin{tabular}{@{}|p{.4775\textwidth}|p{.4775\textwidth}|@{}}
+\hline Full name of the applicant &
+	%
+	\\
+\hline SEMAPHORE Application ID &
+	%
+	\\
+\hline
+\end{tabular}
+}\vspace{.5cm}
+
+\MakeUppercase{\bfseries\Large Scientific section of the proposal}
+\par\MakeUppercase{\small Main language chosen = English}
+\vspace{4mm}
+
+\hfil\begin{tabular}{|p{10.75cm}|}
+\hline
+\vspace{1sp}
+This part includes the following elements:
+\begin{list}{\arabic{enumi}.}{
+	\usecounter{enumi}
+	\itemsep 0pt \parsep 0pt \parskip 0pt
+	\settowidth{\labelwidth}{2.}
+%	\setlength{\itemindent}{-\labelsep}
+%	\addtolength{\itemindent}{-\labelwidth}
+	\setlength{\leftmargin}{1.3cm}
+%	\setlength{\itemindent}{\labelsep}
+%	\addtolength{\itemindent}{\labelwidth}
+}
+\item Report on past research
+\item Description of the research project
+\item Comments on changes made in the research project in case of resubmission (optional)
+\item Potential interdisciplinary approach of the research project (optional)
+\item Description of the work environment
+\item Publications of the applicant related to the proposal
+\item Five most significant publications of the applicant
+\item Comments on mobility (optional)
+\item Additional comments (optional)
+\end{list}
+
+\vspace{2mm}
+\textbf{\color[RGB]{31,73,125}The applicant must fill in the sections below and convert the file into an unprotected PDF before appending it to the online application form.}
+
+\vspace{4mm}
+The F.R.S.-FNRS insists on \textbf{strict compliance with the instructions given for each part of the proposal} (scientific section relevant to the instrument selected, number of pages allowed for documents to be enclosed with the application form...) and stresses again the sovereign consideration of the Scientific Commissions assessing the application file.
+\\[1.5mm]\hline
+\end{tabular}
+\end{small}
+}
+
+
+\section{Report on past research}
+\label{sec:past-work}
+\instructions{Please provide a report underlining your past research
+activities and possible achievements (max.\ 2~pages).}
+
+
+\section{Description of the research project}
+\label{sec:proj}
+\instructions{The written project (max.\ 4 pages including the bibliography) must be made up of 4 parts according to the structure below, and include the reference bibliography listed by order of appearance within the text.
+Graphs and tables may be added (max.\ 2 pages).}
+
+\subsection{Goals of the research}
+
+
+\subsection{State of the art} 
+
+
+\subsection{Research project}
+
+
+\subsection{Work plan}
+
+
+\section{Comments on changes made in the research project}
+\label{sec:resub}
+\instructions{In case of former application submitted to the F.R.S.-FNRS via the
+same funding instrument, please specify the main changes made in your funding
+application following previous submission, identifying comments from experts
+that you may have taken into account (max.\,1 page).}
+
+
+\section{Potential interdisciplinary approach of the research project}
+\label{sec:interdis}
+\instructions{If applicable, please identify the interdisciplinary approach of
+your research project (max.\ 1 page).}
+
+
+\section{Description of the work environment}
+\label{sec:work-env}
+\instructions{Please provide the information accounting for the adequacy of the environment (available intellectual and/or material means) to carry out the research as detailed in the submitted project.
+Please specify the assets of the research environment related to the project and the main publications of the laboratory/promoter (max.\ 1 page).}
+
+
+\section{Publications of the applicant related to the proposal}
+\label{sec:proposal-pubs}
+\instructions{Please provide a selection of maximum 3 of your most relevant
+publications related to the subject of your research project, including an
+abstract or a summary.}
+
+
+
+\section{Five most significant publications of the applicant}
+\label{sec:top-pubs}
+\instructions{Please provide a selection of 5 of the most significant
+publications in your career, including an abstract or a summary.\phantom{tf}}
+
+
+
+\section{Comments on mobility}
+\label{sec:mobility}
+\instructions{You may indicate information relevant to past, current or expected
+mobility. On the other hand, you may comment on the absence of mobility (max.\ 1
+page).}
+
+
+\section{Additional comments}
+\label{sec:comments}
+\instructions{If you want to communicate elements that have not been mentioned
+elsewhere in the file, please provide this information below in max.\ 1 page.}
+
+\bibliographystyle{apsrev4-1_title}
+%\bibliographystyle{apsrev4-1}
+{\footnotesize\raggedright\setlength{\bibsep}{.5\parskip}\bibliography{references}}
+\end{document}

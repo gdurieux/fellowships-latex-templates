@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\usepackage{lmodern, amsmath, xcolor}
+\usepackage[numbers,elide,compress]{natbib}
+\usepackage[bottom=1.65cm, top=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[colorlinks=true, citecolor=blue, urlcolor=blue, linkcolor=blue, breaklinks=true,pdfpagelabels=false ]{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sfmath, sansmathaccent}
+
+\makeatletter
+
+\renewcommand{\thesection}{\arabic{section}.\hspace*{-.4cm}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}\hspace*{-.2cm}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt plus 5pt minus 3pt}
+%\setlength{\headsep}{0mm}
+\setlength{\footskip}{1cm}
+\setlength{\headheight}{4.5mm}
+
+\renewcommand{\section}{\@startsection{section}{1}{\z@}{10pt}{1pt}{\Large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}{7pt}{1pt}{\large\bfseries}}
+\renewcommand{\@oddhead}{%
+\small\hfill%
+	\begin{tabular}{@{}r@{}}
+	\\[-2.5mm]APPEL BOURSES ET MANDATS / GRANTS AND FELLOWSHIPS CALL
+	\\[-0.75mm]F.R.S.-FNRS 20xx
+	\end{tabular}%
+}
+\newcommand{\instructions}[1]{{\small\it\fontsize{11.5pt}{.20\baselineskip}\selectfont\parbox{\textwidth}{#1}}\nopagebreak\par}
+
+\newenvironment{myitemize}{\par\list{--}{\topsep 0pt\itemsep 0pt\itemindent 0\labelwidth \leftmargin 1\labelwidth}}{\endlist}
+\newenvironment{mybigitemize}{\par\list{}{\topsep 0pt\itemsep 0pt\parsep 0pt\leftmargin 0pt \itemindent 0\labelwidth}}{\endlist}
+
+\newcommand{\rien}[1]{}
+
+
+\makeatother
+\begin{document}
+\large
+\fontsize{13.3pt}{.77\baselineskip}\selectfont
+%------------------
+\par
+{\centering\begin{small}
+\fontsize{10.7pt}{.85\baselineskip}\selectfont%
+\par
+{\renewcommand{\arraystretch}{1.2}
+\par
+\begin{tabular}{@{}|p{.474\textwidth}|p{.474\textwidth}|@{}}
+\hline Full name of the applicant &	\\
+\hline Reference e-space &		\\
+\hline Type of instrument &		\\
+\hline
+\end{tabular}
+\par}%
+\par
+\vspace{1cm}
+
+\MakeUppercase{\bfseries\Large Publications of the applicant -- Full list}
+\par\MakeUppercase{\small Main language chosen = English}
+\vspace{7mm}
+
+\begin{tabular}{|p{10.5cm}|}
+\hline
+\vspace{1sp}
+Please draw up hereunder the list of publications (published or accepted) organised under the following categories:
+\begin{enumerate}\itemsep 0pt \parsep 0pt \parskip 0pt
+\item Published works, as an author, a co-author or an editor
+\item Book chapters where the applicant is (co-)author
+\item Articles published in peer-review journals
+\item Articles published in conference proceedings
+\item Oral presentations during conferences with scientific selection committee
+\rien{Posters are allowed for a Ph.D fellowship: “Aspirant” (Research Fellow), “Bourse spéciale de doctorat” (Special Doctoral Grant), “Candidat spécialiste doctorant” (Medical Doctor Applicant to an MSc and a Ph.D.), “Spécialiste doctorant” (Clinical Master Specialist Applicant to a Ph.D.), “Vétérinaire clinicien-chercheur doctorant” (Veterinary MD. Ph.D. Student) or for a “Chargé de recherches” (Postdoctoral Researcher)}
+\item Patents
+\end{enumerate}
+\\\hline
+\end{tabular}
+\par
+\end{small}
+}
+
+
+\end{document}

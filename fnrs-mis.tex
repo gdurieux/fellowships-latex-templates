@@ -1,0 +1,171 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\usepackage{lmodern, amsmath, xcolor, rotating, multirow, adjustbox}
+\usepackage[numbers,elide,sort&compress]{natbib}
+\usepackage[bottom=1.65cm, top=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[colorlinks=true, citecolor=blue, urlcolor=blue, linkcolor=blue, breaklinks=true,pdfpagelabels=false ]{hyperref}
+\usepackage[normalem]{ulem}
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sfmath, sansmathaccent}
+
+
+% tikz
+\usepackage{tikz}
+
+
+\makeatletter
+
+\renewcommand{\thesection}{\arabic{section}.\hspace*{-.4cm}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}\hspace*{-.2cm}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt plus 5pt minus 3pt}
+%\setlength{\headsep}{0mm}
+\setlength{\footskip}{1cm}
+\setlength{\headheight}{4.5mm}
+
+\renewcommand{\section}{\@startsection{section}{1}{\z@}{10pt}{1pt}{\Large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}{7pt}{1pt}{\large\bfseries}}
+\renewcommand{\@oddhead}{%
+\small\hfill%
+	\begin{tabular}{@{}r@{}}
+	\\[-2.5mm]
+	F.R.S.-FNRS CREDITS AND PROJECTS CALL 20xx (MIS)
+	\end{tabular}%
+}
+\newcommand{\instructions}[1]{{\small\it\fontsize{11.5pt}{.20\baselineskip}\selectfont\parbox{\textwidth}{#1}}\nopagebreak\par}
+
+\newenvironment{myitemize}{\list{--}{\topsep 0pt \parsep 0pt \itemsep 0pt\itemindent 0\labelwidth \leftmargin 1\labelwidth}}{\endlist}
+\newenvironment{mybigitemize}{\par\list{}{\topsep 0pt\itemsep 0pt\parsep 0pt\leftmargin 0pt \itemindent 0\labelwidth}}{\endlist}
+
+\newcommand{\rien}[1]{}
+
+
+\makeatother
+\begin{document}
+\large
+\fontsize{13.3pt}{.77\baselineskip}\selectfont
+%------------------
+%\fontsize{10.7pt}{.85\baselineskip}\selectfont%
+
+\vspace*{2cm}
+\begin{center}
+\MakeUppercase{\bfseries\Huge\fontsize{50pt}{\baselineskip}\selectfont Scientific\\[5mm] section}
+\par\MakeUppercase{\small Main language chosen = English}
+\end{center}
+
+\vspace{4mm}
+{\renewcommand{\arraystretch}{2.5}
+\vspace*{-3.5mm}
+\begin{tabular}{@{}|p{.4775\textwidth}|p{.4775\textwidth}|@{}}
+\hline \textbf{Type of instrument} &
+	Incentive Grant for Scientific Research (MIS)\\
+\hline Full name of the promoter &
+	%
+	\\
+\hline Shortened title of the project (40~characters max., including spaces) &
+	%
+	\\
+\hline Reference e-space&
+	%
+	\\
+\hline
+\end{tabular}}
+
+\vspace{2cm}
+{\textbf{Remarks:}}{\it
+
+\vspace{2mm}
+%\textbf{\color[RGB]{31,73,125}
+1) The promoter must fill in the sections below and convert the file into an \uline{unprotected PDF} before appending it to the electronic form.
+
+\vspace{4mm}
+2) The F.R.S.-FNRS insists on \textbf{strict compliance with the instructions given for each part of the proposal} (scientific section relevant to the instrument selected, number of pages allowed for documents to be enclosed with the application form...) and stresses again the sovereign consideration of the Scientific Commissions assessing the application file.
+
+
+\vspace{4mm}
+3) In case of mismatch between the `scientific section' and the online form, only the information provided in the form will be considered for the review of the research project.
+
+}
+
+
+\newpage
+
+\section{Brief report on previous works}
+\label{sec:past-work}
+\instructions{Please write a brief report (max.\ 2 pages) on your research undertaken for the last 10 years, drawing connections with your new project and mentioning your significant references on the subject (please make a list in the form of footnotes).}
+
+
+
+
+\section{Description of the research project}
+\label{sec:proj}
+\instructions{The written project (max.\ 4 pages) according to the structure below, accompanied by a reference bibliography (max.\ 1 page besides the 4 pages dedicated to the project) listed by order of appearance within the text.
+Graphs and tables may be added (max.\ 2 pages).}
+
+\subsection{Goals of the research}
+
+
+\subsection{State of the art} 
+
+
+\subsection{Research project}
+
+
+\subsection{Work plan (to be described for the whole duration of the project)}
+
+
+\section{Comments on changes made in the research project in case of resubmission (optional)}
+\label{sec:resub}
+\instructions{In case of former application submitted to the F.R.S.-FNRS via the
+same funding instrument, please specify the main changes made in your funding
+application following previous submission, identifying comments from experts
+that you may have taken into account (max.\,1 page).}
+
+
+
+\section{Potential interdisciplinary approach of the research project (optional)}\label{sec:interdis}
+\instructions{If applicable, please identify the interdisciplinary approach of
+your research project (max.\ 1 page).}
+
+
+
+\section{Arguments of the MIS project}
+\label{label:arg}
+\instructions{The written arguments must be divided in 4 sections (max.\ 1 page for each).}
+
+
+\subsection{What does the project represent in terms of originality and novelty?}
+
+
+
+\subsection{How would the project lead to the creation of a new research unit or open up a new direction of research within the existing laboratory?}
+
+
+
+\subsection{Which degree of scientific autonomy will the project have with regard to the existing laboratory?}
+
+
+\subsection{Which future-oriented thematic will the project address (development prospects of the field of study)?}
+
+
+\section{Publications of the promoter related to the project}
+\label{label:pubs}
+
+
+
+\section{Additional comments (optional)}
+\label{sec:comments}
+\instructions{If you want to communicate elements that have not been mentioned
+elsewhere in the file, please provide this information below in max.\ 2 pages.
+
+Please note that in case the presented project provides for the involvement of patients and/or human or animal subjects, it is important that the project includes justifications on the planned sample size (number of subjects included in the study/studies) and how the size is relevant (based on statistical power calculations, for instance). It is also important to explain how the number of patients/subjects expected can be reached. In case the project provides for the involvement of patients and/or subjects, please provide those pieces of information under this section (if not already mentioned elsewhere in the project). Ultimately, this information (or the lack of information) may be taken into account by experts in the frame of the evaluation of your funding application.
+}
+
+
+\bibliographystyle{apsrev4-1_title}
+%\bibliographystyle{apsrev4-1}
+{\footnotesize\raggedright\setlength{\bibsep}{.5\parskip}\bibliography{references}}
+\end{document}
