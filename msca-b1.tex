@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{multicol,multirow}
+\usepackage{xcolor,colortbl,booktabs}
+\usepackage{slashed,cancel,calrsfs}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{amsmath,amsfonts,amssymb,mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{diagbox}
+\usepackage{graphicx,epsfig}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{wasysym}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{amsbsy}
+\usepackage{amscd}
+\usepackage{txfonts}
+\usepackage{enumitem}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}
+\def\wtil#1{\widetilde{#1}}
+\usepackage[a4paper, vmargin=2.7cm, hmargin=2.5cm, binding offset=0cm]{geometry}
+%%%%%%%%%%
+%% BibLatex
+\usepackage[bottom]{footmisc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,style=verbose,doi=false,isbn=false,url=false,eprint=false,giveninits=true]{biblatex}
+\addbibresource{references.bib}
+\DeclareFieldInputHandler{title}{\def\NewValue{}}
+%\AtEveryCitekey{\clearfield{title}}
+%\AtEveryBibitem{\clearfield{title}}
+%\AtEveryCitekey{\clearfield{pages}}
+\AtEveryCitekey{\clearfield{note}}
+\renewbibmacro{in:}{,}
+\DeclareFieldFormat{pages}{#1}
+\renewcommand*{\bibpagespunct}{\addspace}
+%%%%%%%%%%%%%%%%%
+\newcommand{\etal}{\textit{et al.}}
+%%
+%\iffalse
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[R]{GaugeHiggsEFT} 
+\fancyhead[L]{\scriptsize Call: HORIZON-MSCA-20xx-PF-01 --- MSCA Postdoctoral Fellowships 20xx}
+\fancyfoot[C]{\frame{\colorbox{black!20}{\makebox[\dimexpr\headwidth-2\fboxsep][c]{\strut\footnotesize Part B-1 --- Page \thepage \hspace{1pt} of \pageref{LastPage}}}}}
+%\fancyfoot[C]{Part B-1 --- page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+%\fi
+%%%
+
+%\renewcommand{\thesection}{B1. \arabic{section}} 
+
+
+% comments
+\newcommand{\gd}[1]{\textcolor{green!70!black}{#1}}
+\begin{document}
+
+
+\begin{center}
+\Huge{\textbf{Part B-1}}
+\end{center}%
+\vspace{-0.5cm}%
+\section{Excellence}
+\subsection{Quality and pertinence of the project's research and innovation objectives (and the extent to which they are ambitious, and go beyond the state of the art)}\label{sec:proposal}
+
+
+
+
+\citereset%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Soundness of the proposed methodology (including interdisciplinary approaches, consideration of the gender dimension and other diversity aspects if relevant for the research project, and the quality of open science practices)}
+
+
+\paragraph{Overall methodology:}
+
+
+\paragraph{Integration of methods and disciplines to pursue the objectives:}
+
+\paragraph{Gender dimension and other diversity aspects:}
+
+\paragraph{Open science practices:}
+
+\paragraph{Research data management and management of other research outputs:}
+
+
+\subsection{Quality of the supervision, training and of the two-way transfer of knowledge between the researcher and the host}
+
+
+
+\subsection{Quality and appropriateness of the researcher's professional experience, competences and skills}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Impact}
+\subsection{Credibility of the measures to enhance the career perspectives and employability of the researcher and contribution to his/her skills development}
+
+
+
+\subsection{Suitability and quality of the measures to maximize expected outcomes and impacts, as set out in the dissemination and exploitation plan, including communication activities}
+
+
+\subsection{The magnitude and importance of the project's contribution to the expected scientific, societal and economic impacts}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Quality and efficiency of the implementation}
+\subsection{Quality and effectiveness of the work plan, assessment of risks and appropriateness of the effort assigned to work packages}
+
+
+\subsection{Quality and capacity of the host institutions and participating organizations, including hosting arrangements}
+
+
+\end{document}
